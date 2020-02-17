@@ -2,3 +2,5 @@ cd C:/Users/Utilisateur/Documents/Cours/5_annee/ducker/ping/server3
 docker build -t server3 .
 
 docker images
+
+docker run server3 

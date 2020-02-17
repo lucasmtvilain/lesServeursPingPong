@@ -1,4 +1,4 @@
-FROM python:3.7
+FROM python:3.8-slim-buster
 
 RUN mkdir /server1
 COPY . /server1
@@ -6,8 +6,8 @@ WORKDIR /server1
 
 RUN pip install -r requirement.txt
 
-EXPOSE 5372
+EXPOSE 8080
 
 ENTRYPOINT [ "python" ]
 
-CMD [ "main.py" ]
+CMD [ "Server3.py" ]
